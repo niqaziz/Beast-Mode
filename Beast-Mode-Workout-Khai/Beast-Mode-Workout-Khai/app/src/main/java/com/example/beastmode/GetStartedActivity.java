@@ -45,6 +45,7 @@ public class GetStartedActivity extends AppCompatActivity {
         btnlogin = (Button) findViewById(R.id.login_btn_login);
         etConfirmPassword = (EditText) findViewById(R.id.login_et_confirmpassword);
         btngoogle=(Button) findViewById(R.id.btn_google);
+        //get instance:     
         mFirebaseAuth = FirebaseAuth.getInstance();
 // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
