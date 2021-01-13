@@ -31,6 +31,7 @@ public class SplashActivity extends AppCompatActivity {
         btnlogin=(Button) findViewById(R.id.splash_btn_signin);
         btnsignup=(Button) findViewById(R.id.splash_btn_signup);
         videoview = (VideoView) findViewById(R.id.splash_videoview);
+        mFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
         if (mFirebaseUser!= null){
             Log.d("kwek","kwekkkkkk");

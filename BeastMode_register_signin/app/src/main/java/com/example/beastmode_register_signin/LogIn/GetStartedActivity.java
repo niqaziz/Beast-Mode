@@ -99,7 +99,7 @@ public class GetStartedActivity extends AppCompatActivity {
 
 
                             if (task.isSuccessful()) {
-                                
+
 
 
                                 Intent intent = new Intent(GetStartedActivity.this, ExplorerMainActivity.class);
