@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_explorer">
+    <fragment
+        android:id="@+id/navigation_explorer"
+        android:name="com.example.beastmode_register_signin.Fragment.ExplorerFragment"
+        android:label="fragment_explorer"
+        tools:layout="@layout/fragment_explorer" >
+        <action
+            android:id="@+id/action_navigation_explorer_to_nav_exercise_detail"
+            app:destination="@id/nav_exercise_detail" />
+        <action
+            android:id="@+id/action_navigation_explorer_to_navigation_contactus"
+            app:destination="@id/navigation_contactus" />
+        <action
+            android:id="@+id/action_navigation_explorer_to_navigation_location"
+            app:destination="@id/navigation_location" />
+        <action
+            android:id="@+id/action_navigation_explorer_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_exercise_detail"
+        android:name="com.example.beastmode_register_signin.Fragment.ExerciseDetailFragment"
+        android:label="fragment_exercise_detail"
+        tools:layout="@layout/fragment_exercise_detail" />
+    <fragment
+        android:id="@+id/navigation_contactus"
+        android:name="com.example.beastmode_register_signin.Fragment.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="com.example.beastmode_register_signin.Fragment.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.beastmode_register_signin.Fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
