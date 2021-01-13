@@ -3,6 +3,7 @@
     package="com.example.beastmode_register_signin">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
 
 
