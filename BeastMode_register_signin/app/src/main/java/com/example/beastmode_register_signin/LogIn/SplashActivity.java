@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.beastmode_register_signin.ExplorerMainActivity;
 import com.example.beastmode_register_signin.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -30,10 +32,11 @@ public class SplashActivity extends AppCompatActivity {
         btnsignup=(Button) findViewById(R.id.splash_btn_signup);
         videoview = (VideoView) findViewById(R.id.splash_videoview);
 
-       // if (mFirebaseUser!= null){
-         //   Intent intent= new Intent(SplashActivity.this, MainActivity.class);
-           // startActivity(intent);
-        //}
+        if (mFirebaseUser!= null){
+            Log.d("kwek","kwekkkkkk");
+          Intent intent= new Intent(SplashActivity.this, ExplorerMainActivity.class);
+            startActivity(intent);
+        }
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
