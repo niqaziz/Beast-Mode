@@ -93,7 +93,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mMediaPlayer.release();
+       //mMediaPlayer.release();
         mMediaPlayer=null;
     }
 }
